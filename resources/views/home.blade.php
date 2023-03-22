@@ -24,7 +24,7 @@
     <main>
         <div class="container py-4">
             <header class="pb-3 mb-4 border-bottom">
-                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <a href="{{ route('home') }}" class="d-flex align-items-center text-dark text-decoration-none">
                     <img src="{{ asset('img/liga1.png') }}" alt="Liga 1" width="50">
                     <span class="fs-4 ms-2">BRI Liga 1</span>
                 </a>
