@@ -317,7 +317,7 @@
                     selectedOptions.push($(this).find(":selected").val());
                 });
                 
-                //disable seluruh opsi yang memiliki value pada array selectedOptions
+                //disable all options that have value in selectedOptions array
                 $('.club').each(function () {
                     $(this).find('option').each(function () {
                         if (selectedOptions.includes($(this).val())) {
@@ -336,8 +336,6 @@
             $('#update-standings').on('change', '.club', function () {
                 // var selectedOption = $(this).find(":selected").val();
                 var selectedOptions = [];
-                // $('.club').not(this).find('option[value="' + selectedOption + '"]').prop('disabled', true);
-                // $('.club').not(this).find('option[value="' + selectedOption + '"]').siblings().prop('disabled', false);
                 
                 $('.club').each(function () {
                     selectedOptions.push($(this).find(":selected").val());
